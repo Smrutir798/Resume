@@ -1,0 +1,381 @@
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.profile_image_inner img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 6px 8px  rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    left: 30px;
+    top: 30px;
+}
+
+.profile_image_inner img:hover {
+    transform: scale(1.05);
+}
+
+.name_title_inner{
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+
+.summary_inner{
+    height: inherit;
+    width:60%;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 63%;
+    transform: translate(-50%, -50%);   
+}
+
+.contact{
+    background-color:antiquewhite;
+    height: 110px;
+    width: 30%;
+    border-radius: 20px;
+    position: absolute;
+    top: 44.25%;
+    left: 48%;
+}
+
+.contact_inner img{
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 20px;
+}
+
+.contact_inner img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.education,
+.achievements {
+    background-color: #222;
+    border-radius: 20px;
+    width: 95%;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px auto;
+    padding: 20px 30px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.08);
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    left : 30px;
+    top: 50px;
+}
+
+/* Row layout for the boxes */
+.education_achievements_row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px; /* Increased gap for more space between boxes */
+}
+
+.education,
+.achievements {
+    width: 40%;
+    margin: 20px; /* Adjusted margin for better spacing */
+}
+
+.education_inner h3,
+.achievements_inner h3 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.5em;
+}
+
+.education_inner ul,
+.achievements_inner ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.education_inner li,
+.achievements_inner li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.skills {
+    background-color: #222;
+    border-radius: 20px;
+    width: 85%;
+    margin: 40px auto 0 auto;
+    padding: 25px 35px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.08);
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skills_inner h3 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.skills_inner ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.skills_inner li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 1.05em;
+}
+
+.projects {
+    background-color: #222;
+    border-radius: 20px;
+    width: 85%;
+    height: 430px;
+    margin: 40px auto 0 auto;
+    padding: 25px 35px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.08);
+    color: #fff;
+    position: relative;
+    left: -18px;
+    top: 30px;
+    z-index: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.projects_inner h3 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.projects_inner ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.projects_inner li {
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-size: 1.08em;
+}
+
+.projects_inner a {
+    color: #ffd700;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.projects_inner a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.projects_inner p {
+    margin: 0;
+    font-size: 1.05em;
+    line-height: 1.5;
+}
+.skills {
+    background-color: #222;
+    border-radius: 20px;
+    width: 85%;
+    
+    margin: 40px auto 0 auto;
+    padding: 25px 35px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.08);
+    color: #fff;
+    position: relative;
+    left: -18px;
+    top: 20px;
+    
+    z-index: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skills_inner h3 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.skills_inner ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.skills_inner li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 1.05em;
+}
+
+.skills_inner strong {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+
+.certification {
+    background-color: #222;
+    border-radius: 20px;
+    width: 85%;
+    margin: 40px auto 0 auto;
+    padding: 25px 35px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.08);
+    color: #fff;
+    position: relative;
+    left: -18px;
+    z-index: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.certification_inner h3 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.certification_inner ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.certification_inner li {
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-size: 1.08em;
+}
+
+.certification_inner strong {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.experience {
+    background-color: #222;
+    border-radius: 20px;
+    width: 85%;
+    margin: 40px auto 0 auto;
+    padding: 25px 35px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.08);
+    color: #fff;
+    position: relative;
+    left: -18px;
+    z-index: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.experience_inner h3 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.experience_inner ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.experience_inner li {
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-size: 1.08em;
+}
+
+.experience_inner strong {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.courses {
+    background-color: #222;
+    border-radius: 20px;
+    width: 85%;
+    margin: 40px auto 0 auto;
+    padding: 25px 35px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.08);
+    color: #fff;
+    position: relative;
+    left: -18px;
+    z-index: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.courses_inner h3 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.courses_inner ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.courses_inner li {
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-size: 1.08em;
+}
+
+.courses_inner strong {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.career_interest {
+    background-color: #222;
+    border-radius: 20px;
+    width: 85%;
+    margin: 40px auto 0 auto;
+    padding: 25px 35px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.08);
+    color: #fff;
+    position: relative;
+    left: -18px;
+    z-index: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.career_interest_inner h3 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.career_interest_inner p {
+    margin: 0;
+    font-size: 1.08em;
+    line-height: 1.6;
+}
